@@ -1,4 +1,3 @@
-{% load bootstrap4 %}
 <! doctype html>
     <html lang="en">
 
@@ -9,14 +8,20 @@
         <meta name="author" content="">
         <link rel="icon" href="../../../../favicon.ico">
         <title>Learning Log</title>
-        {% bootstrap_css %}
-        {% bootstrap_javascript jquery='full' %}
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" rel="stylesheet">
+        <script crossorigin="anonymous"
+            integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+            src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script crossorigin="anonymous"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
     <body>
         <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
             <a class="navbar-brand" href="{% url 'learning_logs:index'%}">Learning Log</a>
-            <button class="navbar-toogler" type="button" data-toogle="collapse" data-target="#navbarCollapse"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -44,7 +49,7 @@
                 </ul>
             </div>
         </nav>
-        
+
         <main role="main" class="container">
             <div class="pb-2 mb-2 border-bottom">
                 {% block page_header %}{% endblock page_header %}
@@ -52,6 +57,8 @@
             <div>
                 {% block content %}{% endblock content %}
             </div>
-            
+
         </main>
     </body>
+
+    </html>

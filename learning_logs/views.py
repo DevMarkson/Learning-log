@@ -1,5 +1,5 @@
 from django.http import request
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth.decorators import login_required
 from django.http import Http404, HttpResponseRedirect
 
@@ -27,7 +27,7 @@ def topics(request):
 @login_required
 def topic(request, topic_id):
     """Showing a single topic and all its entries"""
-    topic = Topic.objects.get(id=topic_id)
+    topic = get_object_or_404(Topic, id=topic_id)
     # make sure the topic belongs to the current user.
     if topic.owner != request.user:
         raise Http404
@@ -58,7 +58,7 @@ def new_topic(request):
 def new_entry(request, topic_id):
 
     """Add a new entry for a particular topic"""
-    topic = Topic.objects.get(id=topic_id)
+    topic = get_object_or_404(Topic, id=topic_id)
     if topic.owner != request.user:
         raise Http404
     if request.method != "POST":
@@ -80,7 +80,7 @@ def new_entry(request, topic_id):
 @login_required
 def edit_entry(request, entry_id):
     """Edit an existing entry"""
-    entry = Entry.objects.get(id=entry_id)
+    entry = get_object_or_404(Entry, id=entry_id)
     topic = entry.topic
     check_topic_owner(request, topic)
 
