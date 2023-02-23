@@ -4,19 +4,21 @@
 <div class="jumbotron">
     <h1 class="display-3">Learning Log</h1>
 
-    <p class="lead">An online journal system that keeps track of information you've
-        learnt about particular topics.</p>
+    <p class="lead">Take control of your learning with our dynamic learning log tool, 
+        designed to help you stay organized, focused, and inspired.</p>
     <a class="btn btn-lg btn-primary" href="{% url 'learning_logs:topics' %}" role="button">Create a topic &raquo;</a>
 </div>
 {% else %}
 <div class="jumbotron">
     <h1 class="display-3">Track your learning</h1>
 
-    <p class="lead">Make your own Learning Log, and
-        keep a list of the topics you're learning
-        about. Whenever you learn something new about
+    <p class="lead">
+        Unlock your full potential with a personalized 
+        learning log that helps you document, reflect, and grow.
+        Whenever you learn something new about
         a topic, make an entry summarizing what you've
-        learnt.</p>
+        learnt.
+        </p>
     <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}" role="button">Register &raquo;</a>
 </div>
 {% endif %}
