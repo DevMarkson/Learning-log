@@ -2,10 +2,10 @@
 This is a Learning Log web application built with Django, a web framework for Python. The purpose of this application is to allow users to create topics they want to learn about, and then add entries to each of those topics as they learn more about them. This application was created as a project to demonstrate understanding of Django's core concepts.
 
 ## Features
-Users can create an account and log in to access their own learning log.
-Users can create new topics and add entries to each topic.
-Each entry can be viewed individually, and users can edit or delete their entries as needed.
-The website includes a simple, responsive user interface that makes it easy to navigate and use.
+- Users can create an account and log in to access their own learning log.
+- Users can create new topics and add entries to each topic.
+- Each entry can be viewed individually, and users can edit or delete their entries as needed.
+- The website includes a simple, responsive user interface that makes it easy to navigate and use.
 
 ## Getting Started
 To use this website, simply visit the deployed site, [Learning Log](https://web-production-6917.up.railway.app/) and create an account. Once you're logged in, you can create new topics, add entries to those topics, and view your learning log over time.
