@@ -8,7 +8,7 @@ This is a Learning Log web application built with Django, a web framework for Py
 - The website includes a simple, responsive user interface that makes it easy to navigate and use.
 
 ## Getting Started
-To use this website, simply visit the deployed site, [Learning Log](https://web-production-6917.up.railway.app/) and create an account. Once you're logged in, you can create new topics, add entries to those topics, and view your learning log over time.
+To use this website, simply visit the deployed site, [Learning Log](https://learninglog.azurewebsites.net/) and create an account. Once you're logged in, you can create new topics, add entries to those topics, and view your learning log over time.
 
 ## Technologies Used
 This website was built using the following technologies:
