@@ -30,7 +30,8 @@ SECRET_KEY = 'c^qv!stmq+j#j0+%md#@nkh1@k1it&w$px4q!x6n-%-03_51mk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['web-production-6917.up.railway.app',]
+# ALLOWED_HOSTS = ['web-production-6917.up.railway.app',]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -130,7 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = './learning_logs/staticfiles'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
