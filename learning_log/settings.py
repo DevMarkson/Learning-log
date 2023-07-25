@@ -31,7 +31,8 @@ SECRET_KEY = 'c^qv!stmq+j#j0+%md#@nkh1@k1it&w$px4q!x6n-%-03_51mk'
 DEBUG = False
 
 # ALLOWED_HOSTS = ['web-production-6917.up.railway.app',]
-ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['localhost', '*']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
